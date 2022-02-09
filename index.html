@@ -73,6 +73,35 @@ following table shows the sports that I would recommend someone try.which helps 
     </tr>
   </table>
   <hr>
+
+  <blockquotes>
+    <h1># code fencing</h1>
+    <p>
+        Breadth-first search (BFS) is an algorithm for searching a tree data structure for a node that satisfies a given property.
+        It starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level.
+        Extra memory, usually a queue, is needed to keep track of the child nodes that were encountered but not yet explored.
+    </p>
+
+<a href="https://en.wikipedia.org/wiki/Breadth-first_search">More Info</a>
+  </blockquotes>
+  <pre>
+    ```
+if (!used[u]) {
+    cout << "No path!";
+} else {
+    vector<int> path;
+    for (int v = u; v != -1; v = p[v])
+        path.push_back(v);
+    reverse(path.begin(), path.end());
+    cout << "Path: ";
+    for (int v : path)
+        cout << v << " ";
+}
+```
+  </pre>
+
+  <blockquotes>
+      <a href="https://cp-algorithms.com/graph/breadth-first-search.html">much more to know</a>
     </body>
 
 </html>
